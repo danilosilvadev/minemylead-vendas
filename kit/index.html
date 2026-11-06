@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kit do vendedor · MineMyLead</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0F1B2D;--yellow:#FFE14D;--paper:#F4F1EA;--ink:#1C1915;--mute:#5E584F;--line:#DAD6CC;--card:#fff;--ok:#1d8a5a;--bad:#b3261e}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 "Instrument Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",sans-serif;letter-spacing:-.02em;line-height:1.12;margin:0}
+.top{position:sticky;top:0;z-index:10;background:var(--navy);color:#fff;display:flex;gap:14px;align-items:center;padding:10px 20px;overflow-x:auto;white-space:nowrap}
+.top b{font:800 18px "Bricolage Grotesque",sans-serif}.top b i{color:var(--yellow);font-style:normal}.top a{color:#c9d1dd;text-decoration:none;font-size:14px}.top a:hover{color:#fff}
+main{max-width:920px;margin:0 auto;padding:0 20px 80px}
+.cover{background:var(--navy);color:#fff;padding:64px 20px 56px}.cover .in{max-width:920px;margin:0 auto}
+.cover h1{font-size:clamp(34px,6vw,58px);font-weight:800}.cover h1 mark{background:none;color:var(--yellow)}
+.cover p{color:#c9d1dd;font-size:19px;max-width:34em;margin:18px 0 0}
+.tag{display:inline-block;font:600 13px "Instrument Sans";letter-spacing:.08em;text-transform:uppercase;background:var(--yellow);color:var(--navy);padding:4px 12px;border-radius:99px;margin-bottom:18px}
+section{padding:54px 0 0}
+.k{font:600 13px "Instrument Sans";letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin-bottom:10px;display:flex;gap:10px;align-items:center}.k:before{content:"";width:22px;height:4px;border-radius:2px;background:var(--yellow)}
+h2{font-size:clamp(26px,4vw,38px);font-weight:800;margin-bottom:14px}h3{font-size:21px;font-weight:700;margin:26px 0 8px}
+p{margin:0 0 12px}ul,ol{margin:0 0 14px;padding-left:22px}li{margin:4px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin:14px 0}
+.say{background:#fffbe0;border-left:5px solid var(--yellow);border-radius:0 12px 12px 0;padding:14px 18px;margin:12px 0;font-size:17px}.say:before{content:"Diga: ";font-weight:700}
+.ask{background:#eef3fa;border-left:5px solid #2a78d6;border-radius:0 12px 12px 0;padding:12px 18px;margin:10px 0}.ask:before{content:"Pergunte: ";font-weight:700}
+.warn{background:#fdeceb;border-left:5px solid var(--bad);border-radius:0 12px 12px 0;padding:12px 18px;margin:12px 0}
+.todo{background:#fff4d6;border:2px dashed #d9a441;border-radius:12px;padding:12px 18px;margin:12px 0}.todo b{color:#8a5a00}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.grid .card{margin:0}.grid h3{margin-top:0;font-size:18px}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:14.5px}
+th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#eceae3;font-weight:600}
+td.us,th.us{background:#fff8d1}th.us{background:var(--navy);color:#fff}tr:last-child td{border-bottom:0}
+.tw{overflow-x:auto;border-radius:14px}
+.big{font:800 54px "Bricolage Grotesque";letter-spacing:-.03em}
+.steps{counter-reset:s;display:grid;gap:10px;padding:0;list-style:none}.steps li{counter-increment:s;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px 14px 62px;position:relative;margin:0}
+.steps li:before{content:counter(s);position:absolute;left:16px;top:12px;width:32px;height:32px;border-radius:50%;background:var(--navy);color:var(--yellow);font:800 17px "Bricolage Grotesque";display:grid;place-items:center}
+.t{display:inline-block;font:600 12px "Instrument Sans";background:var(--navy);color:var(--yellow);border-radius:6px;padding:2px 8px;margin-right:6px}
+.lead{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:14.5px}.lead .h{background:#f4f2ee;padding:10px 14px;font-weight:600;border-bottom:1px solid var(--line)}
+.lead .r{display:flex;gap:10px;padding:9px 14px;border-bottom:1px solid var(--line)}.lead .r:last-child{border:0}.lead .r b{flex:0 0 190px}
+.vids{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}.vids .card{margin:0}
+footer{background:var(--navy);color:#c9d1dd;padding:28px 20px;margin-top:60px;font-size:14px}footer .in{max-width:920px;margin:0 auto}
+@media print{.top{display:none}section{break-inside:avoid-page}.card,.say,.ask,table{break-inside:avoid}body{background:#fff}.cover{padding:40px 20px}}
+@media(max-width:600px){.lead .r{flex-direction:column;gap:2px}.lead .r b{flex:none}}
+</style>
+</head>
+<body>
+<nav class="top" aria-label="Seções"><a href="../" style="color:#fff;font-weight:600">← Portal</a><b>Mine<i>My</i>Lead</b><a href="#resumo">Resumo</a><a href="#cliente">Cliente</a><a href="#entrega">O que entrega</a><a href="#preco">Preço</a><a href="#comparativo">Comparativo</a><a href="#call">A call</a><a href="#demo">Demo</a><a href="#objecoes">Objeções</a><a href="#fechar">Fechar</a><a href="#copy">Frases</a><a href="#nunca">Nunca dizer</a><a href="#videos">Vídeos</a></nav>
+
+<header class="cover"><div class="in">
+<span class="tag">Kit do vendedor · versão 1 · 06/11/2026</span>
+<h1>Quem <mark>já precisa</mark> de você. O pacote é seu.</h1>
+<p>Tudo o que você precisa para vender o MineMyLead numa call agendada: o produto, o preço, as comparações, o roteiro minuto a minuto, as objeções e o que nunca dizer.</p>
+</div></header>
+
+<main>
+
+<section id="resumo">
+<div class="k">1 · Resumo</div>
+<h2>O produto em 30 segundos</h2>
+<div class="say">A MineMyLead entrega um pacote de 100 empresas brasileiras que vendem para outras empresas. Cada uma vem com o nome do dono, o melhor contato direto e o motivo de estar na lista, com a prova: uma frase do próprio site dela. O pacote custa R$ 990, pagamento único, e antes de pagar você pode pedir 3 leads de teste, de graça.</div>
+<div class="grid">
+<div class="card"><h3>O que é</h3><p>Um pacote de 100 empresas B2B do Brasil + um aplicativo para trabalhar com elas.</p></div>
+<div class="card"><h3>Para quem</h3><p>Quem vende para empresas e precisa de gente nova para conversar.</p></div>
+<div class="card"><h3>Quanto</h3><p><span class="big">R$ 990</span><br>uma vez, pelo pacote de 100. Teste de 3 leads grátis.</p></div>
+<div class="card"><h3>O que NÃO é</h3><p>Não é disparo automático, não promete resposta, venda ou resultado, e não é exclusivo.</p></div>
+</div>
+<div class="card"><b>A promessa certa, em uma linha:</b> “Um ponto de partida de verdade: empresas certas, com dono, contato e prova. A conversa é com você.”</div>
+</section>
+
+<section id="cliente">
+<div class="k">2 · Para quem vender</div>
+<h2>O cliente ideal</h2>
+<p><b>Quem compra:</b> empresas e profissionais que vendem para outras empresas no Brasil e hoje gastam tempo achando com quem falar.</p>
+<ul>
+<li>Software e sistemas para empresas (gestão, ERP, automação)</li>
+<li>Contabilidade, consultoria, jurídico, RH, treinamento</li>
+<li>Agências de marketing, design e tecnologia</li>
+<li>Indústria e distribuição que vendem para o comércio ou outras fábricas</li>
+<li>Logística, manutenção, serviços para empresas</li>
+</ul>
+<p><b>Quem NÃO é cliente:</b> quem vende para o consumidor final (pessoa física). O pacote é de empresas que vendem para empresas. Se o cliente vende para pessoas, diga com franqueza que o produto ainda não serve para ele.</p>
+<div class="warn"><b>Só Brasil.</b> Todas as empresas do pacote são brasileiras, do cadastro público de CNPJ. Não vendemos para outros países por enquanto.</div>
+<h3>Sinais de um bom prospecto</h3>
+<ul><li>Fala que “não tem tempo de prospectar” ou “não acha o contato certo”.</li><li>Já tentou lista comprada, anúncio ou pesquisa manual e se frustrou.</li><li>Tem uma oferta clara e sabe dizer quem é o cliente ideal dele.</li><li>Quer falar com o dono ou decisor, não com a recepção.</li></ul>
+</section>
+
+<section id="entrega">
+<div class="k">3 · O que o cliente recebe</div>
+<h2>Os benefícios, sem exagero</h2>
+<p>Tudo abaixo existe hoje no produto. Use só isto.</p>
+<div class="grid">
+<div class="card"><h3>Em cada empresa</h3><ul><li>Só empresas que vendem para empresas (regras + dois modelos de IA conferem)</li><li>Nome do dono (sócio no cadastro de CNPJ), com cargo e confiança</li><li>Melhor contato direto: celular, telefone ou e-mail</li><li>Tipo do contato: <span class="t">S</span> dono direto, <span class="t">A</span> provável dono, <span class="t">B</span> chega à empresa, <span class="t">C</span> compartilhado</li><li>Contato confirmado no site da empresa (quando aparece lá)</li><li>Contato compartilhado e quem pediu para sair vêm sinalizados</li><li>Origem de cada contato e data do cadastro</li></ul></div>
+<div class="card"><h3>A prova</h3><ul><li>Uma frase do próprio site da empresa mostrando que vende para empresas</li><li>Sem site: a atividade registrada é a prova</li><li>Cadastro oficial: razão social, CNPJ, situação, abertura, idade</li><li>Porte e cidade</li><li>“Precisa do que você vende”: montamos o perfil de compra com o cliente e cada empresa mostra por que combina</li><li>Os que mais combinam vêm primeiro</li></ul></div>
+<div class="card"><h3>O aplicativo</h3><ul><li>Busca, filtros, ordem e agrupamentos</li><li>Mapa do Brasil e estatísticas</li><li>Status de cada empresa (nova, contatada, respondeu, fechada)</li><li>Como foi cada contato + anotações</li><li>Resultados e evolução por pacote, relatório em planilha</li><li>Menu de comandos (Ctrl K) e atalhos de teclado</li><li>Abrir o WhatsApp do contato, copiar o contato</li><li>Windows e Linux; também abre como arquivo HTML no navegador</li></ul></div>
+<div class="card"><h3>O controle</h3><ul><li>Funciona sem internet, não envia nada a ninguém</li><li>Os dados ficam no computador do cliente</li><li>Exporta CSV e JSON; imprime ou salva em PDF</li><li>Português e inglês; tema claro e escuro</li><li>Vários pacotes, cópia de segurança</li><li>Teste grátis de 3 leads antes de comprar</li></ul></div>
+</div>
+<h3>Anatomia de um lead (exemplo fictício)</h3>
+<div class="lead"><div class="h">Ferragens Aurora · Curitiba/PR · Atacado</div>
+<div class="r"><b>Vende para empresas</b><span>Regras e dois modelos de IA concordaram. “Distribuidora de ferragens e fixadores para construtoras e lojas de materiais.” (trecho do site)</span></div>
+<div class="r"><b>Precisa do que você vende</b><span>Atende construtoras: o público do seu perfil de compra.</span></div>
+<div class="r"><b>Dono no cadastro</b><span>Ricardo S. · Administrador · confiança 80%</span></div>
+<div class="r"><b>Contato S · WhatsApp</b><span>(11) 9••••-••01 · celular de empresa com um sócio só: o número do próprio dono · ✓ o mesmo contato aparece no site</span></div>
+<div class="r"><b>Contato B · E-mail</b><span>e-mail de função: a caixa da empresa</span></div>
+<div class="r"><b>Cadastro</b><span>CNPJ, ativa, aberta em 2005, porte micro</span></div></div>
+<p style="margin-top:10px;font-size:14px;color:var(--mute)">Abra o pacote de exemplo em minemylead.com/pt/amostra/ (empresas inventadas).</p>
+</section>
+
+<section id="como">
+<div class="k">4 · Como funciona a venda</div>
+<h2>O caminho do cliente</h2>
+<ol class="steps">
+<li><b>Interesse.</b> O cliente pede o piloto ou o teste grátis no site (formulário: nome, e-mail, site ou rede social). Chega um e-mail para o time.</li>
+<li><b>Call agendada (30 min).</b> Você descobre, mostra o produto e oferece o teste. Roteiro na seção 7.</li>
+<li><b>Teste grátis.</b> 3 leads escolhidos para o que ele vende, enviados por e-mail em até 24 horas (o time prepara à mão).</li>
+<li><b>Decisão.</b> Se gostou: pacote de 100 por R$ 990, pagamento único.</li>
+<li><b>Entrega.</b> Montamos o perfil de compra com ele, geramos o pacote e entregamos: arquivo HTML, CSV e JSON, e o aplicativo (Windows ou Linux).</li>
+<li><b>Acompanhamento.</b> Uma conversa curta depois, com a planilha de feedback: o que funcionou, quais contatos chegaram ao dono.</li>
+</ol>
+<div class="todo"><b>A definir pelo Dan antes das primeiras vendas:</b> forma de pagamento (Pix, link de pagamento ou outra), prazo de entrega do pacote depois do pagamento, e quem emite recibo ou nota. Até lá, diga: “combino com você o pagamento e a data na hora de fechar”.</div>
+</section>
+
+<section id="preco">
+<div class="k">5 · Preço e valor</div>
+<h2>R$ 990, uma vez</h2>
+<div class="grid">
+<div class="card"><h3>O preço</h3><p><span class="big">R$ 990</span><br>pacote de 100 empresas, pagamento único. Sem mensalidade.</p></div>
+<div class="card"><h3>Por empresa</h3><p><span class="big">R$ 9,90</span><br>menos de dez reais por empresa, com dono, contato e prova.</p></div>
+<div class="card"><h3>Antes de pagar</h3><p><span class="big">3 leads</span><br>de teste, grátis, escolhidos para o que o cliente vende.</p></div>
+</div>
+<h3>Como justificar o valor</h3>
+<ol><li><b>Tempo.</b> “Quanto tempo você leva para achar uma empresa, descobrir o dono e achar o contato?” Multiplique por 100 com ele. Exemplo de conta (ajuste com os números dele): 10 minutos por empresa são cerca de 17 horas para 100.</li><li><b>Custo da hora.</b> “Quanto vale uma hora sua, ou de quem pesquisa para você?” Compare com R$ 990.</li><li><b>Risco baixo.</b> “Você testa 3 antes de pagar. E o pagamento é uma vez só.”</li></ol>
+<div class="warn">A conta de tempo é um <b>exemplo</b> para pensar junto com o cliente. Não é um dado nosso nem uma promessa de economia.</div>
+<h3>Sem desconto no improviso</h3>
+<p>O preço é R$ 990. Se o cliente pedir desconto, volte ao teste grátis e ao valor por empresa. Qualquer exceção é decisão do Dan, não sua.</p>
+</section>
+
+<section id="comparativo">
+<div class="k">6 · Comparativo</div>
+<h2>Contra o jeito de hoje e contra a concorrência</h2>
+<p>O cliente sempre compara. Conheça as alternativas e fale delas com respeito: o ponto é mostrar o que o pacote resolve, não falar mal de ninguém. As descrições são gerais; fornecedores variam.</p>
+<div class="tw"><table>
+<thead><tr><th></th><th>Pesquisa manual</th><th>Anúncios pagos</th><th>Lista comprada</th><th>Bases públicas de CNPJ</th><th>Ferramentas de prospecção internacionais</th><th>Contratar quem pesquise</th><th class="us">MineMyLead</th></tr></thead>
+<tbody>
+<tr><td><b>Dono identificado</b></td><td>Se você achar</td><td>Não: você alcança quem vê o anúncio</td><td>Nem sempre</td><td>Mostram sócios, sem priorizar</td><td>Cobertura menor no Brasil</td><td>Depende do trabalho feito</td><td class="us">Sócio do cadastro, com cargo e confiança</td></tr>
+<tr><td><b>Contato direto</b></td><td>Você caça</td><td>Não se aplica</td><td>Muitos sem origem</td><td>Contato do cadastro, sem tipo</td><td>Varia</td><td>Depende</td><td class="us">Melhor contato, tipo S/A/B/C e origem</td></tr>
+<tr><td><b>Prova de que vende para empresas</b></td><td>Você confere</td><td>Não</td><td>Não</td><td>Só a atividade registrada</td><td>Filtros por setor</td><td>Depende</td><td class="us">Trecho do site ou atividade, checados por regras e IA</td></tr>
+<tr><td><b>Foco no Brasil e CNPJ</b></td><td>Sim</td><td>Sim</td><td>Varia</td><td>Sim</td><td>Pouco</td><td>Sim</td><td class="us">Só Brasil, cadastro público de CNPJ</td></tr>
+<tr><td><b>Custo</b></td><td>Seu tempo</td><td>Pago todo mês, sem saber quem vê</td><td>Varia</td><td>Gratuito ou assinatura</td><td>Assinatura em dólar</td><td>Salário ou hora, todo mês</td><td class="us">R$ 990, uma vez</td></tr>
+<tr><td><b>Tempo até começar</b></td><td>Semanas</td><td>Dias a semanas</td><td>Rápido</td><td>Você filtra sozinho</td><td>Rápido, com curva</td><td>Semanas</td><td class="us">Pacote pronto; teste em até 24 h</td></tr>
+<tr><td><b>Organização</b></td><td>Planilha solta</td><td>Painel do anúncio</td><td>Planilha</td><td>Você monta</td><td>Plataforma na nuvem</td><td>Planilha</td><td class="us">App com lista, filtros, mapa, status e notas</td></tr>
+</tbody></table></div>
+<p style="font-size:14px;color:var(--mute);margin-top:8px">Antes de citar o preço ou um recurso de um concorrente específico, confira o site dele no dia. Aqui só há categorias.</p>
+<h3>Frases de comparação</h3>
+<div class="say">Na mão você gasta horas por empresa. Com anúncio, você paga para aparecer e torce para o dono ver. Com o pacote, você já começa sabendo quem é o dono e como falar com ele.</div>
+<div class="say">Lista comprada vem sem origem e sem motivo. Aqui todo contato tem origem, e toda empresa tem a prova de que vende para empresas.</div>
+<div class="say">Uma ferramenta de prospecção costuma ser assinatura todo mês e pensada para fora do Brasil. Aqui é um pacote brasileiro, R$ 990 uma vez.</div>
+</section>
+
+<section id="call">
+<div class="k">7 · A call</div>
+<h2>Roteiro minuto a minuto (30 min)</h2>
+<div class="tw"><table><thead><tr><th>Min</th><th>Parte</th><th>Objetivo</th></tr></thead><tbody>
+<tr><td>0–3</td><td>Abertura</td><td>Calma, combinar a pauta, abrir espaço para ele falar</td></tr>
+<tr><td>3–12</td><td>Descoberta</td><td>Entender quem é o cliente ideal dele e como ele encontra clientes hoje</td></tr>
+<tr><td>12–19</td><td>Demonstração</td><td>Mostrar uma empresa: dono, contato, prova; o app</td></tr>
+<tr><td>19–23</td><td>Oferta do teste</td><td>3 leads grátis, para o que ele vende</td></tr>
+<tr><td>23–28</td><td>Preço e objeções</td><td>R$ 990, comparações, tirar dúvidas</td></tr>
+<tr><td>28–30</td><td>Fechamento</td><td>Decisão e próximo passo com data</td></tr></tbody></table></div>
+
+<h3>0–3 · Abertura</h3>
+<div class="say">Oi, [nome], obrigado por separar esse tempo. Combinei com você trinta minutos. Primeiro quero entender como você vende hoje, depois te mostro o produto e vemos se faz sentido. Pode ser?</div>
+<p>Fale devagar, sorria na voz. Não comece pelo produto.</p>
+
+<h3>3–12 · Descoberta (você fala 30%, ele 70%)</h3>
+<div class="ask">O que você vende e para quem? Quem é o seu cliente ideal: tamanho, ramo, cidade?</div>
+<div class="ask">Hoje, como você encontra essas empresas? Quanto tempo isso toma por semana?</div>
+<div class="ask">Já comprou lista ou anunciou para achar clientes? Como foi?</div>
+<div class="ask">Quando você acha a empresa, é fácil chegar no dono ou no decisor?</div>
+<div class="ask">Se amanhã você tivesse 100 empresas certas com o contato do dono, o que mudaria na sua semana?</div>
+<p>Anote as palavras dele. Repita-as depois: “você disse que perde tempo caçando o contato”.</p>
+
+<h3>12–19 · Demonstração</h3>
+<p>Roteiro na seção 8. Mostre uma empresa de verdade do perfil dele, se já tiver, ou o pacote de exemplo.</p>
+
+<h3>19–23 · Oferta do teste</h3>
+<div class="say">Pelo que você me contou, vende [produto] para [tipo de empresa]. Posso preparar 3 empresas assim, com dono, contato e prova, e te mandar por e-mail em até 24 horas. É de graça. Qual e-mail e qual site ou Instagram da sua empresa?</div>
+
+<h3>23–28 · Preço</h3>
+<div class="say">Se você gostar, o pacote com 100 empresas custa R$ 990, pagamento único, sem mensalidade. Dá menos de dez reais por empresa, já com dono, contato e prova.</div>
+<p>Depois do preço, <b>fique em silêncio</b> e deixe o cliente responder.</p>
+
+<h3>28–30 · Fechamento</h3>
+<div class="say">Combinado: eu te mando os 3 leads até [dia/hora]. Podemos marcar 15 minutos [dia] para você me dizer o que achou e, se fizer sentido, já fechamos o pacote?</div>
+<p>Saia da call com uma <b>data marcada</b> para a conversa depois do teste.</p>
+</section>
+
+<section id="demo">
+<div class="k">8 · Demonstração</div>
+<h2>Roteiro de 7 minutos</h2>
+<ol class="steps">
+<li><b>A lista (1 min).</b> “Aqui estão as empresas do pacote, agrupadas pelo tipo de contato. S é o dono direto.” Mostre a busca e um filtro.</li>
+<li><b>Uma empresa aberta (3 min).</b> Abra uma e percorra de cima para baixo: “Vende para empresas”, a frase do site; “Precisa do que você vende”; o dono no cadastro; o contato com tipo e origem; o cadastro oficial.</li>
+<li><b>O mapa e as estatísticas (1 min).</b> “Cada ponto é uma empresa na cidade dela. Aqui você vê por estado, porte e atividade.”</li>
+<li><b>Acompanhar (1 min).</b> Marque uma empresa como contatada, registre como foi, mostre os resultados. “Você sabe o que funcionou.”</li>
+<li><b>Fechar a demo (1 min).</b> “Funciona sem internet, não envia nada a ninguém e os dados ficam no seu computador.”</li>
+</ol>
+<div class="warn"><b>Não diga</b> que o sistema envia mensagens por ele. Quem fala com as empresas é o cliente, pelo WhatsApp, telefone ou e-mail dele.</div>
+<p>Materiais: pacote de exemplo em <b>minemylead.com/pt/amostra/</b> e a animação do app no site.</p>
+</section>
+
+<section id="objecoes">
+<div class="k">9 · Objeções</div>
+<h2>O que responder</h2>
+<div class="tw"><table><thead><tr><th>Ele diz</th><th>Você responde</th></tr></thead><tbody>
+<tr><td>“É caro.”</td><td>São 100 empresas com dono, contato e prova por menos de dez reais cada. E você testa 3 de graça antes. Quanto custa uma hora sua?</td></tr>
+<tr><td>“Já tenho lista.”</td><td>Ótimo. A sua traz o nome do dono, de onde veio o contato e por que a empresa combina com você? A nossa traz tudo isso, com prova.</td></tr>
+<tr><td>“O contato chega mesmo no dono?”</td><td>Nem sempre, e não prometemos. Por isso cada contato vem com tipo (S, A, B, C) e origem, para você saber o que esperar. Estamos medindo esse número no piloto.</td></tr>
+<tr><td>“Você garante resultado?”</td><td>Não. Não prometemos resposta nem venda. Entregamos o ponto de partida e você mede o que acontece no aplicativo.</td></tr>
+<tr><td>“É exclusivo?”</td><td>Não. A mesma empresa pode aparecer em outros pacotes. O valor está na qualidade e na prova de cada uma.</td></tr>
+<tr><td>“Vocês disparam as mensagens?”</td><td>Não. Você fala com as empresas do seu jeito, pelo seu WhatsApp, telefone ou e-mail. O pacote é o ponto de partida.</td></tr>
+<tr><td>“De onde vêm os dados? Posso usar?”</td><td>Do cadastro público de CNPJ da Receita Federal, que são dados de empresas. Quem pede para sair é bloqueado em todos os pacotes futuros (contact@minemylead.com). Oriente: apresente-se, diga de onde veio o contato e dê a opção de parar. Para dúvida jurídica, consulte um advogado.</td></tr>
+<tr><td>“Preciso pensar.”</td><td>Claro. O que ficou em aberto: preço, confiança no dado ou prioridade? Posso mandar os 3 leads de teste para você decidir olhando o produto.</td></tr>
+<tr><td>“Como funciona o pagamento?”</td><td>Pagamento único. Combino com você a forma e a data na hora de fechar. <i>(Definir antes: ver seção 4.)</i></td></tr>
+<tr><td>“Funciona para o meu ramo?”</td><td>Me diga quem é o seu cliente ideal. Se ele for empresa brasileira, preparo 3 para você ver. Se vender para pessoa física, não é o nosso produto, e prefiro dizer agora.</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="fechar">
+<div class="k">10 · Fechar e acompanhar</div>
+<h2>Do teste ao pacote</h2>
+<h3>Mensagem para marcar a call</h3>
+<div class="card">Oi, [nome]! Aqui é [seu nome], da MineMyLead. Vi seu pedido de piloto. Posso te ligar [dia, hora] por 30 minutos? Te mostro como funciona o pacote de 100 empresas com dono, contato e prova, e já preparo 3 de teste para o seu caso. Funciona para você?</div>
+<h3>E-mail ao enviar o teste</h3>
+<div class="card"><b>Assunto:</b> Seus 3 leads de teste, [nome da empresa]<br><br>Oi, [nome], conforme combinamos, seguem 3 empresas escolhidas para quem vende [o que ele vende]. Cada uma tem o dono, o contato direto, o tipo do contato e a prova. Dê uma olhada e me diga: elas são o tipo de cliente que você quer? Marcamos [dia] às [hora] para você me contar o que achou?</div>
+<h3>Mensagem depois do teste (WhatsApp)</h3>
+<div class="card">Oi, [nome]! E aí, o que achou das 3 empresas? Se fizerem sentido, o pacote de 100 sai por R$ 990, uma vez só. Quer que eu monte o seu hoje?</div>
+<h3>Perguntas de fechamento</h3>
+<ul><li>“Isso é o tipo de empresa que você quer ver na sua lista?”</li><li>“Começamos pelo pacote de 100 hoje?”</li><li>“Qual forma de pagamento é melhor para você?”</li></ul>
+<h3>Depois da venda</h3>
+<ol><li>Monte com ele o perfil de compra: quem é o cliente ideal, ramo, porte, região, o que ele NÃO quer.</li><li>Passe o pedido ao time: nome, e-mail, site ou rede social, perfil.</li><li>Combine a data de entrega.</li><li>Marque uma conversa curta depois, com a planilha de feedback (quais contatos chegaram ao dono, quais estavam errados).</li></ol>
+</section>
+
+<section id="copy">
+<div class="k">11 · Frases e copy</div>
+<h2>Linguagem que vende</h2>
+<h3>Títulos e frases de marca</h3>
+<div class="grid">
+<div class="card">“Quem já precisa de você. O pacote é seu.”</div>
+<div class="card">“100 empresas. Dono, contato e prova.”</div>
+<div class="card">“Menos garimpo, mais conversa.”</div>
+<div class="card">“Listas dizem quem. Nós mostramos por que vale abordar.”</div>
+<div class="card">“Veja antes de comprar: 3 leads grátis.”</div>
+<div class="card">“Um ponto de partida de verdade.”</div>
+</div>
+<h3>Palavras para usar</h3>
+<p>dono, contato direto, prova, motivo, cadastro público de CNPJ, ponto de partida, teste grátis, pagamento único, você decide, funciona sem internet.</p>
+<h3>Palavras para evitar</h3>
+<p>garantido, resultado certo, exclusivo, automático, dispara, “leads quentes”, “vai fechar”, “milhares”, “o melhor do mercado”.</p>
+<h3>Provas que você pode mostrar</h3>
+<ul><li>O pacote de exemplo (minemylead.com/pt/amostra/): cada empresa aberta, com a frase do site.</li><li>O teste grátis do próprio cliente: a melhor prova é o dele.</li><li>A animação do app no site.</li></ul>
+<div class="todo"><b>Depoimentos:</b> ainda não temos depoimentos de clientes, e você <b>não deve inventar</b> nenhum. Depois do piloto, peça ao cliente uma frase curta sobre o que ele achou e a permissão para usar. Coloque aqui as frases reais, com nome e empresa.</div>
+<h3>Histórias curtas para contar</h3>
+<div class="say">Todo mundo que vende para empresa conhece o garimpo: abrir uma por uma, achar o dono, achar um número que funcione. A gente faz esse trabalho uma vez, com prova, e você começa a conversa.</div>
+<div class="say">Um contato bom não é o que existe, é o que chega na pessoa certa. Por isso cada contato vem com tipo e origem: você sabe onde apostar primeiro.</div>
+</section>
+
+<section id="nunca">
+<div class="k">12 · Regras de ouro</div>
+<h2>O que nunca dizer</h2>
+<div class="warn"><ul style="margin:0">
+<li><b>Nunca prometa resultado:</b> resposta, reunião, venda, ROI. Não prometemos nenhum.</li>
+<li><b>Nunca prometa exclusividade:</b> a mesma empresa pode estar em outros pacotes.</li>
+<li><b>Nunca prometa garantia ou reposição:</b> não existem.</li>
+<li><b>Nunca diga que o sistema envia mensagens:</b> quem fala com as empresas é o cliente.</li>
+<li><b>Nunca invente depoimento, número ou cliente.</b></li>
+<li><b>Nunca dê desconto sem o Dan.</b></li>
+<li><b>Nunca diga que o contato “é do dono”</b> se for tipo B ou C: use o tipo.</li>
+<li><b>Nunca dê aconselhamento jurídico</b> (LGPD, abordagem comercial): indique um advogado.</li>
+</ul></div>
+<h3>Fatos que você pode citar (com o contexto)</h3>
+<ul>
+<li>O pacote tem 100 empresas e custa R$ 990, pagamento único.</li>
+<li>O teste grátis tem 3 leads, enviados por e-mail em até 24 horas.</li>
+<li>Os dados vêm do cadastro público de CNPJ da Receita Federal.</li>
+<li>Regras e dois modelos de IA conferem se a empresa vende para empresas.</li>
+<li><i>Dado interno, não prometer:</i> numa auditoria de 05/11/2026 com 145 empresas, 129 (89%) vendiam para empresas. É uma amostra nossa, e o resultado de cada pacote varia.</li>
+</ul>
+</section>
+
+<section id="check">
+<div class="k">13 · Checklists</div>
+<h2>Antes e depois da call</h2>
+<div class="grid">
+<div class="card"><h3>Antes</h3><ul><li>Li o pedido: nome, site ou rede social, o que vende</li><li>Olhei o site ou Instagram dele</li><li>Abri o pacote de exemplo no navegador</li><li>Testei o som, a tela e a internet</li><li>Tenho o roteiro e as perguntas à mão</li></ul></div>
+<div class="card"><h3>Depois</h3><ul><li>Anotei: cliente ideal, dor, tempo gasto, objeções</li><li>Combinei o teste e a data da conversa seguinte</li><li>Passei ao time o pedido do teste</li><li>Enviei a mensagem de acompanhamento no mesmo dia</li><li>Registrei no CRM: etapa, data, próximo passo</li></ul></div>
+</div>
+<h3>O que registrar de cada call</h3>
+<p>Nome e empresa · o que vende · cliente ideal · como acha clientes hoje · tempo gasto · objeção principal · teste pedido (sim/não) · data da próxima conversa · resultado (comprou, vai pensar, não serve).</p>
+<h3>Glossário</h3>
+<ul><li><span class="t">S</span> contato do dono direto (por exemplo, o celular do sócio único)</li><li><span class="t">A</span> dono provável</li><li><span class="t">B</span> chega à empresa (e-mail de função, telefone fixo)</li><li><span class="t">C</span> contato compartilhado por várias empresas</li><li><b>Super lead:</b> empresa que passou em todas as checagens e tem contato direto</li><li><b>Perfil de compra:</b> a descrição do cliente ideal que montamos com o cliente</li></ul>
+</section>
+
+<section id="videos">
+<div class="k">14 · Curso em vídeo</div>
+<h2>4 vídeos curtos para aprender</h2>
+<p>Cada vídeo tem cerca de um minuto. Veja na ordem, uma vez por semana ou antes da primeira call.</p>
+<div class="vids" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))"><div class="card"><h3>1 · O que vendemos</h3><video controls preload="none" playsinline poster="../assets/posters/aula-1.jpg" style="width:100%;border-radius:10px;background:#000" src="../assets/videos/aulas/1-o-que-vendemos.mp4"></video><p style="margin-top:8px">O produto, o preço e o que não prometemos.</p></div><div class="card"><h3>2 · Como conduzir a call</h3><video controls preload="none" playsinline poster="../assets/posters/aula-2.jpg" style="width:100%;border-radius:10px;background:#000" src="../assets/videos/aulas/2-como-conduzir-a-call.mp4"></video><p style="margin-top:8px">As cinco partes e as perguntas de descoberta.</p></div><div class="card"><h3>3 · Comparar e justificar o preço</h3><video controls preload="none" playsinline poster="../assets/posters/aula-3.jpg" style="width:100%;border-radius:10px;background:#000" src="../assets/videos/aulas/3-comparar-e-justificar-o-preco.mp4"></video><p style="margin-top:8px">Manual, anúncio, lista, contratar alguém; a conta por empresa.</p></div><div class="card"><h3>4 · Objeções e fechamento</h3><video controls preload="none" playsinline poster="../assets/posters/aula-4.jpg" style="width:100%;border-radius:10px;background:#000" src="../assets/videos/aulas/4-objecoes-e-fechamento.mp4"></video><p style="margin-top:8px">As respostas e como pedir a decisão.</p></div></div>
+<p style="font-size:14px;color:var(--mute)">Todas as aulas, com texto e download, estão no <a href="../#aulas">portal</a>.</p>
+<h3>Materiais e links</h3>
+<ul><li>Site: minemylead.com/pt/</li><li>Pacote de exemplo: minemylead.com/pt/amostra/</li><li>Pedido do teste grátis: minemylead.com/pt/piloto/</li><li>Contato: contact@minemylead.com</li><li>Logos, carrossel e legenda do Instagram: <a href="../#imagens">portal, seção Imagens</a></li><li>Vídeos de marketing: <a href="../#marketing">portal, seção Vídeos</a></li><li>Este kit em PDF: <a href="../assets/pdf/kit-do-vendedor.pdf">kit-do-vendedor.pdf</a></li></ul>
+</section>
+
+</main>
+<footer><div class="in"><b>MineMyLead</b> · Kit do vendedor v1 · 06/11/2026 · Material interno do time de vendas. Não compartilhe com clientes.</div></footer>
+</body>
+</html>

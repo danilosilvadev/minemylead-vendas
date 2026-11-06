@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0F1B2D">
+<title>Portal do vendedor · MineMyLead</title>
+<meta name="description" content="Aulas, kit do vendedor, vídeos de marketing, imagens e textos prontos para vender o MineMyLead.">
+<link rel="icon" href="assets/imagens/logos/icone-app.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0F1B2D;--navy2:#17283f;--yellow:#FFE14D;--paper:#F4F1EA;--ink:#1C1915;--mute:#5E584F;--line:#DAD6CC;--card:#fff;--ok:#1d8a5a}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 "Instrument Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",sans-serif;letter-spacing:-.02em;line-height:1.12;margin:0}
+a{color:inherit}
+.top{position:sticky;top:0;z-index:20;background:var(--navy);color:#fff;display:flex;gap:6px;align-items:center;padding:8px 16px;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+.top::-webkit-scrollbar{display:none}
+.top .lg0{display:flex;align-items:center;gap:8px;font:800 18px "Bricolage Grotesque",sans-serif;text-decoration:none;margin-right:10px}
+.top .lg0 img{width:26px;height:26px}.top .lg0 i{color:var(--yellow);font-style:normal}
+.top a.n{color:#c9d1dd;text-decoration:none;font-size:14px;padding:6px 10px;border-radius:8px}.top a.n:hover{background:var(--navy2);color:#fff}
+.hero{background:var(--navy);color:#fff;padding:60px 16px 56px;position:relative;overflow:hidden}
+.hero .in,main{max-width:1040px;margin:0 auto}
+.hero .tag{display:inline-block;font:600 13px "Instrument Sans";letter-spacing:.08em;text-transform:uppercase;background:var(--yellow);color:var(--navy);padding:4px 12px;border-radius:99px;margin-bottom:18px}
+.hero h1{font-size:clamp(34px,6.4vw,62px);font-weight:800;max-width:15em}.hero h1 mark{background:none;color:var(--yellow)}
+.hero p{color:#c9d1dd;font-size:19px;max-width:36em;margin:18px 0 26px}
+.hero .mascot{position:absolute;right:max(16px,calc(50% - 520px));top:36px;width:150px;opacity:.95}
+@media(max-width:760px){.hero .mascot{display:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--yellow);color:var(--navy);font:700 16px "Instrument Sans",sans-serif;padding:12px 20px;border-radius:12px;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{filter:brightness(.95)}.btn.ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px #3a4c66}
+.btn.sm{font-size:14px;padding:8px 14px;border-radius:9px;background:var(--navy);color:var(--yellow)}
+.btn.sm.done{background:var(--ok);color:#fff}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+main{padding:0 16px 80px}
+section{padding:60px 0 0}
+.k{font:600 13px "Instrument Sans";letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin-bottom:10px;display:flex;gap:10px;align-items:center}
+.k:before{content:"";width:22px;height:4px;border-radius:2px;background:var(--yellow)}
+h2{font-size:clamp(26px,4vw,38px);font-weight:800;margin-bottom:10px}
+.lede{color:var(--mute);max-width:40em;margin:0 0 22px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-top:-26px;position:relative}
+.step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 18px 18px 64px;position:relative;box-shadow:0 8px 24px rgba(15,27,45,.08)}
+.step b{position:absolute;left:16px;top:16px;width:36px;height:36px;border-radius:50%;background:var(--navy);color:var(--yellow);font:800 18px "Bricolage Grotesque";display:grid;place-items:center}
+.step h3{font-size:18px;margin-bottom:4px}.step p{margin:0;color:var(--mute);font-size:15px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px}
+.card h3{font-size:19px;margin-bottom:6px}.card p{margin:0 0 14px;color:var(--mute)}
+.card .row{display:flex;gap:8px;flex-wrap:wrap}
+.big{font:800 44px "Bricolage Grotesque";letter-spacing:-.03em;display:block;line-height:1}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:16px}
+.facts .card{background:var(--navy);color:#fff;border:0}.facts .card p{color:#c9d1dd;margin:6px 0 0}.facts .big{color:var(--yellow)}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;align-items:start}
+.vgrid.v9s{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.vc{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.vc video{width:100%;display:block;background:#000;aspect-ratio:16/9;object-fit:contain}
+.vc.v9 video{aspect-ratio:9/16;max-height:70vh}
+.vc.small video{aspect-ratio:9/16;max-height:520px}
+.vb{padding:16px 18px 18px}.vb h3{font-size:20px;margin:2px 0 6px}.vb p{margin:0 0 12px;color:var(--mute);font-size:15px}
+.num{font:600 12px "Instrument Sans";letter-spacing:.08em;text-transform:uppercase;color:#8a6d00;background:#fff4c2;border-radius:99px;padding:3px 10px;display:inline-block}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+details{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}summary{cursor:pointer;font-weight:600;font-size:15px}
+.tx{margin:10px 0 0;padding-left:20px;font-size:15px;color:#3a352d}.tx li{margin:6px 0}
+.sub{font:700 20px "Bricolage Grotesque";margin:34px 0 12px}
+.car{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px}
+.car figure,.logos figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.car img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;background:#ddd}
+.car figcaption{display:flex;justify-content:space-between;align-items:center;padding:8px 10px;font-size:14px;gap:6px}
+.logos{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.lgi{height:150px;overflow:hidden;padding:16px}.lgi img{display:block;width:100%;height:118px;object-fit:contain}
+.lgi.lt{background:#fff}.lgi.dk{background:var(--navy)}
+.lgi.ck{background:conic-gradient(#e7e4dc 25%,#fff 0 50%,#e7e4dc 0 75%,#fff 0) 0 0/20px 20px}
+.lg figcaption{display:flex;flex-direction:column;gap:4px;padding:10px 12px 12px;font-size:14px;align-items:flex-start}.lg figcaption span{color:var(--mute);font-size:13px}.lg figcaption .btn{margin-top:6px}
+.cp{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:flex;gap:14px;justify-content:space-between;align-items:flex-start;margin-bottom:10px}
+.cp p{margin:4px 0 0;white-space:pre-line}.cp > p{margin:0;font-size:18px;font-family:"Bricolage Grotesque",sans-serif;font-weight:700}
+.cp .btn{flex:none}
+.fr{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0 12px}
+.capbox{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.capbox pre{margin:0 0 14px;white-space:pre-wrap;font:15px/1.6 "Instrument Sans",sans-serif}
+.note{background:#fffbe0;border-left:5px solid var(--yellow);border-radius:0 12px 12px 0;padding:12px 18px;margin:16px 0;font-size:15px}
+footer{background:var(--navy);color:#c9d1dd;padding:28px 16px;margin-top:70px;font-size:14px}footer .in{max-width:1040px;margin:0 auto}
+</style>
+</head>
+<body>
+<nav class="top" aria-label="Seções"><a class="lg0" href="./"><img src="assets/imagens/logos/icone-app.svg" alt=""><span>Mine<i>My</i>Lead</span></a>
+<a class="n" href="#comecar">Começar</a><a class="n" href="#aulas">Aulas</a><a class="n" href="#kit">Kit</a><a class="n" href="#marketing">Vídeos</a><a class="n" href="#imagens">Imagens</a><a class="n" href="#textos">Textos</a></nav>
+
+<header class="hero"><div class="in">
+<img class="mascot" src="assets/imagens/logos/logo-mascote-para-fundo-escuro.png" alt="">
+<span class="tag">Portal do vendedor</span>
+<h1>Tudo o que você precisa para <mark>vender</mark> o MineMyLead.</h1>
+<p>Aulas em vídeo, o kit completo, os vídeos de marketing, as imagens para postar e os textos prontos. Em um lugar só, e tudo pode ser baixado.</p>
+<div class="cta"><a class="btn" href="#aulas">Começar pelas aulas</a><a class="btn ghost" href="kit/">Abrir o kit do vendedor</a><a class="btn ghost" href="#marketing">Vídeos e imagens</a></div>
+</div></header>
+
+<main>
+<div class="steps" id="comecar">
+<div class="step"><b>1</b><h3>Veja as 4 aulas</h3><p>Cerca de 4 minutos no total. O produto, a call, o preço e as objeções.</p></div>
+<div class="step"><b>2</b><h3>Leia o kit</h3><p>Roteiro minuto a minuto, comparativos e o que nunca dizer. Há PDF e versão para o celular.</p></div>
+<div class="step"><b>3</b><h3>Use os materiais</h3><p>Vídeos, imagens e textos prontos para mandar ou postar. Depois, faça a sua primeira call.</p></div>
+</div>
+
+<section id="resumo">
+<div class="k">O produto em 30 segundos</div>
+<h2>O que você vende</h2>
+<p class="lede">Um pacote de 100 empresas brasileiras que vendem para outras empresas, cada uma com o dono, o melhor contato direto e o motivo de estar na lista, com a prova tirada do site dela.</p>
+<div class="facts">
+<div class="card"><span class="big">R$ 990</span><p>pagamento único, pelo pacote de 100. Sem mensalidade.</p></div>
+<div class="card"><span class="big">3 leads</span><p>de teste, de graça, antes de pagar. A equipe monta à mão.</p></div>
+<div class="card"><span class="big">&lt; R$ 10</span><p>por empresa, com dono, contato e prova.</p></div>
+</div>
+<div class="note"><b>Nunca prometa</b> resposta, venda ou resultado, nem exclusividade. A gente entrega um ponto de partida de verdade. O resto da conversa é do cliente. Veja a lista completa no <a href="kit/#nunca">kit</a>.</div>
+</section>
+
+<section id="aulas">
+<div class="k">Curso</div>
+<h2>4 aulas curtas</h2>
+<p class="lede">Veja na ordem, antes da primeira call. Cada aula tem o texto falado, caso você prefira ler ou consultar depois.</p>
+<div class="vgrid">
+<article class="vc" id="aula-1">
+<video controls preload="none" playsinline poster="assets/posters/aula-1.jpg" src="assets/videos/aulas/1-o-que-vendemos.mp4"></video>
+<div class="vb"><span class="num">Aula 1</span><h3>O que vendemos</h3><p>O produto, o preço e o que não prometemos.</p>
+<div class="row"><a class="btn sm" href="assets/videos/aulas/1-o-que-vendemos.mp4" download>Baixar vídeo · 0:54</a></div>
+<details><summary>Ler o texto da aula</summary><ol class="tx"><li>Bem-vindo ao time. Em um minuto, você entende o que a gente vende.</li><li>A MineMyLead entrega um pacote de cem empresas brasileiras que vendem para outras empresas.</li><li>Cada empresa vem com o nome do dono, o melhor contato direto, e o motivo de estar na lista.</li><li>Não é lista no chute. Vem do cadastro público de CNPJ, com a prova: uma frase do próprio site da empresa.</li><li>O cliente recebe também um aplicativo, com filtros, mapa, estatísticas e anotações. Funciona sem internet.</li><li>O preço é novecentos e noventa reais, pagamento único. E, antes de pagar, ele pode pedir três leads de teste, de graça.</li><li>A gente vende um ponto de partida de verdade. Não promete resposta, nem resultado.</li></ol></details></div></article>
+<article class="vc" id="aula-2">
+<video controls preload="none" playsinline poster="assets/posters/aula-2.jpg" src="assets/videos/aulas/2-como-conduzir-a-call.mp4"></video>
+<div class="vb"><span class="num">Aula 2</span><h3>Como conduzir a call</h3><p>As cinco partes da reunião e as perguntas de descoberta.</p>
+<div class="row"><a class="btn sm" href="assets/videos/aulas/2-como-conduzir-a-call.mp4" download>Baixar vídeo · 0:56</a></div>
+<details><summary>Ler o texto da aula</summary><ol class="tx"><li>A reunião dura trinta minutos, e tem cinco partes.</li><li>Primeiro, abra com calma. Diga que vai entender como o cliente vende hoje, mostrar o produto, e combinar o próximo passo.</li><li>Segundo, descubra. Pergunte quem é o cliente ideal dele, como ele encontra esses clientes hoje, e quanto tempo isso toma.</li><li>Terceiro, mostre o produto. Abra uma empresa de exemplo, e mostre o dono, o contato e a prova.</li><li>Quarto, ofereça o teste: três leads de graça, escolhidos para o que ele vende.</li><li>Quinto, feche. Se ele gostou, o pacote de cem custa novecentos e noventa reais. Combine o pagamento e a entrega.</li><li>Fale pouco, e pergunte muito. Quem descobre a dor, vende melhor.</li></ol></details></div></article>
+<article class="vc" id="aula-3">
+<video controls preload="none" playsinline poster="assets/posters/aula-3.jpg" src="assets/videos/aulas/3-comparar-e-justificar-o-preco.mp4"></video>
+<div class="vb"><span class="num">Aula 3</span><h3>Comparar e justificar o preço</h3><p>Fazer na mão, anúncio, lista, contratar alguém: e a conta por empresa.</p>
+<div class="row"><a class="btn sm" href="assets/videos/aulas/3-comparar-e-justificar-o-preco.mp4" download>Baixar vídeo · 0:46</a></div>
+<details><summary>Ler o texto da aula</summary><ol class="tx"><li>O cliente sempre compara com alguma coisa. Conheça as comparações.</li><li>Fazer na mão: pesquisar empresa por empresa, descobrir o dono, caçar o contato. Toma tempo, e muito número não funciona.</li><li>Anúncio: ele paga para aparecer, e torce para o dono ver. Com a gente, ele já sabe quem é o dono.</li><li>Lista comprada: vem sem origem e sem motivo. Aqui, todo contato tem origem, e toda empresa tem prova.</li><li>Contratar alguém para pesquisar: é salário, todo mês. O pacote custa novecentos e noventa reais, uma vez só.</li><li>A conta é simples: cem empresas por novecentos e noventa reais são menos de dez reais cada.</li></ol></details></div></article>
+<article class="vc" id="aula-4">
+<video controls preload="none" playsinline poster="assets/posters/aula-4.jpg" src="assets/videos/aulas/4-objecoes-e-fechamento.mp4"></video>
+<div class="vb"><span class="num">Aula 4</span><h3>Objeções e fechamento</h3><p>As cinco objeções de quase toda call e como pedir a decisão.</p>
+<div class="row"><a class="btn sm" href="assets/videos/aulas/4-objecoes-e-fechamento.mp4" download>Baixar vídeo · 0:56</a></div>
+<details><summary>Ler o texto da aula</summary><ol class="tx"><li>Cinco objeções aparecem em quase toda call.</li><li>É caro. Responda: são cem empresas, com dono e contato, por menos de dez reais cada. E ele testa antes, de graça.</li><li>Já tenho lista. Pergunte se a lista dele traz o dono, a origem do contato e o motivo. A nossa traz.</li><li>O contato chega ao dono? Nem sempre, e a gente não promete. Por isso cada contato vem com tipo e origem.</li><li>Garante resultado? Não. A gente entrega o ponto de partida, e ele mede o que acontece.</li><li>É exclusivo? Não. A mesma empresa pode aparecer em outros pacotes.</li><li>No fim, peça a decisão: começa pelo teste, ou já leva o pacote de cem?</li><li>Nunca prometa o que a gente não promete. Seja honesto, e a venda vem.</li></ol></details></div></article>
+</div>
+</section>
+
+<section id="kit">
+<div class="k">Kit do vendedor</div>
+<h2>O guia completo da venda</h2>
+<p class="lede">Estrutura da venda, benefícios, comparativo com a concorrência, preço, roteiro da call minuto a minuto, objeções, frases e checklists.</p>
+<div class="grid3">
+<div class="card"><h3>Kit em página</h3><p>Abre bem no celular, com menu por seções. Bom para consultar durante a call.</p><div class="row"><a class="btn sm" href="kit/">Abrir o kit</a></div></div>
+<div class="card"><h3>Kit em PDF</h3><p>21 páginas, para imprimir ou ler sem internet.</p><div class="row"><a class="btn sm" href="assets/pdf/kit-do-vendedor.pdf" download>Baixar o PDF</a><a class="btn sm" href="assets/pdf/kit-do-vendedor.pdf" target="_blank" rel="noopener">Abrir</a></div></div>
+<div class="card"><h3>Atalhos do kit</h3><p>Direto ao que você precisa agora.</p><div class="row"><a class="btn sm" href="kit/#call">A call</a><a class="btn sm" href="kit/#objecoes">Objeções</a><a class="btn sm" href="kit/#comparativo">Comparativo</a><a class="btn sm" href="kit/#preco">Preço</a></div></div>
+</div>
+</section>
+
+<section id="marketing">
+<div class="k">Vídeos de marketing</div>
+<h2>Vídeos para mandar e postar</h2>
+<p class="lede">Os três vídeos de lançamento, em formato vertical (Instagram, Reels, WhatsApp), com a voz da marca. Toque para ver e baixe o arquivo.</p>
+<div class="vgrid v9s">
+<article class="vc v9">
+<video controls preload="none" playsinline poster="assets/posters/video-venda.jpg" src="assets/videos/marketing/video-venda.mp4"></video>
+<div class="vb"><span class="num">9:16 · 0:54</span><h3>Vídeo de venda</h3><p>O gancho, o problema e a entrega: a voz explica por que vender para empresas começa por achar a empresa certa. Sem sistema e sem personagens.</p>
+<div class="row"><a class="btn sm" href="assets/videos/marketing/video-venda.mp4" download>Baixar vídeo</a></div></div></article>
+<article class="vc v9">
+<video controls preload="none" playsinline poster="assets/posters/video-sistema.jpg" src="assets/videos/marketing/video-sistema.mp4"></video>
+<div class="vb"><span class="num">9:16 · 0:40</span><h3>O sistema na tela</h3><p>O produto mostrado por dentro, com o app refeito em animação: lista, mapa, prova e o sinal "precisa do que você vende".</p>
+<div class="row"><a class="btn sm" href="assets/videos/marketing/video-sistema.mp4" download>Baixar vídeo</a></div></div></article>
+<article class="vc v9">
+<video controls preload="none" playsinline poster="assets/posters/video-personagens.jpg" src="assets/videos/marketing/video-personagens.mp4"></video>
+<div class="vb"><span class="num">9:16 · 1:00</span><h3>O filme dos personagens</h3><p>A história da rua dos números: um mineiro, o Lead e o Número explicam o que a MineMyLead faz.</p>
+<div class="row"><a class="btn sm" href="assets/videos/marketing/video-personagens.mp4" download>Baixar vídeo</a></div></div></article>
+</div>
+<div class="sub">O app em animação</div>
+<div class="vgrid" style="grid-template-columns:2fr 1fr">
+<article class="vc wide">
+<video controls preload="none" playsinline poster="assets/posters/app-desktop.jpg" src="assets/videos/marketing/app-desktop.mp4"></video>
+<div class="vb"><span class="num">Computador · 0:28</span><h3>O app no computador</h3><p>Boas-vindas, lista, empresa aberta com a prova, mapa e resultados. Bom para mostrar numa call.</p>
+<div class="row"><a class="btn sm" href="assets/videos/marketing/app-desktop.mp4" download>Baixar vídeo</a></div></div></article>
+<article class="vc v9 small">
+<video controls preload="none" playsinline poster="assets/posters/app-celular.jpg" src="assets/videos/marketing/app-celular.mp4"></video>
+<div class="vb"><span class="num">Celular · 0:28</span><h3>O app no celular</h3><p>A mesma animação, na versão do celular.</p>
+<div class="row"><a class="btn sm" href="assets/videos/marketing/app-celular.mp4" download>Baixar vídeo</a></div></div></article>
+</div>
+</section>
+
+<section id="imagens">
+<div class="k">Imagens</div>
+<h2>Carrossel, logos e legenda</h2>
+<p class="lede">O post de apresentação para o Instagram: 6 imagens (1080 × 1350, formato 4:5), na ordem, com a legenda pronta.</p>
+<div class="row" style="margin-bottom:16px"><a class="btn" href="assets/imagens/todas-as-imagens.zip" download>Baixar tudo (carrossel + logos, .zip)</a></div>
+<div class="car"><figure><a href="assets/imagens/carrossel/slide-1.png" target="_blank" rel="noopener"><img src="assets/imagens/carrossel/slide-1.png" alt="Slide 1 do carrossel"></a><figcaption><b>Slide 1</b><a class="btn sm" href="assets/imagens/carrossel/slide-1.png" download>Baixar</a></figcaption></figure><figure><a href="assets/imagens/carrossel/slide-2.png" target="_blank" rel="noopener"><img src="assets/imagens/carrossel/slide-2.png" alt="Slide 2 do carrossel"></a><figcaption><b>Slide 2</b><a class="btn sm" href="assets/imagens/carrossel/slide-2.png" download>Baixar</a></figcaption></figure><figure><a href="assets/imagens/carrossel/slide-3.png" target="_blank" rel="noopener"><img src="assets/imagens/carrossel/slide-3.png" alt="Slide 3 do carrossel"></a><figcaption><b>Slide 3</b><a class="btn sm" href="assets/imagens/carrossel/slide-3.png" download>Baixar</a></figcaption></figure><figure><a href="assets/imagens/carrossel/slide-4.png" target="_blank" rel="noopener"><img src="assets/imagens/carrossel/slide-4.png" alt="Slide 4 do carrossel"></a><figcaption><b>Slide 4</b><a class="btn sm" href="assets/imagens/carrossel/slide-4.png" download>Baixar</a></figcaption></figure><figure><a href="assets/imagens/carrossel/slide-5.png" target="_blank" rel="noopener"><img src="assets/imagens/carrossel/slide-5.png" alt="Slide 5 do carrossel"></a><figcaption><b>Slide 5</b><a class="btn sm" href="assets/imagens/carrossel/slide-5.png" download>Baixar</a></figcaption></figure><figure><a href="assets/imagens/carrossel/slide-6.png" target="_blank" rel="noopener"><img src="assets/imagens/carrossel/slide-6.png" alt="Slide 6 do carrossel"></a><figcaption><b>Slide 6</b><a class="btn sm" href="assets/imagens/carrossel/slide-6.png" download>Baixar</a></figcaption></figure></div>
+<div class="sub">Legenda do post</div>
+<div class="capbox"><pre id="cap">Quem já precisa de você. O pacote é seu. ⛏️
+
+Oi, a gente é a MineMyLead.
+
+Vender para empresas começa por achar a empresa certa. Depois, descobrir quem é o dono. Depois, um contato que funcione. É um trabalho que toma o tempo de quem deveria estar vendendo.
+
+Nós fazemos esse trabalho: um pacote de 100 empresas brasileiras que vendem para outras empresas, cada uma com o nome do dono, o melhor contato direto e o motivo de estar na lista.
+
+Nada de lista no chute. Cada empresa vem do cadastro público de CNPJ, é checada por regras e por dois modelos de IA, e traz a prova: o trecho do site da empresa e de onde veio cada contato.
+
+Nossa missão é simples: dar a quem vende para empresas um ponto de partida de verdade. Menos garimpo, mais conversa com quem já precisa do que você vende.
+
+👉 Peça 3 super leads grátis, só com o seu site e o seu e-mail: minemylead.com (link na bio)
+O pacote de 100 empresas custa R$ 990, pagamento único.
+
+#vendasb2b #prospecção #leadsb2b #empreendedorismo #pequenasempresas #marketingb2b #vendas #cnpj #startupbrasil #minemylead</pre><div class="row"><button class="btn sm" data-copy-id="cap">Copiar a legenda</button><a class="btn sm" href="assets/imagens/carrossel/legenda-instagram.txt" download>Baixar .txt</a></div></div>
+<div class="sub">Logos</div>
+<div class="logos"><figure class="lg"><div class="lgi lt"><img src="assets/imagens/logos/logo-foto-de-perfil-instagram.png" alt="Foto de perfil"></div><figcaption><b>Foto de perfil</b><span>Instagram, WhatsApp, LinkedIn</span><a class="btn sm" href="assets/imagens/logos/logo-foto-de-perfil-instagram.png" download>Baixar</a></figcaption></figure><figure class="lg"><div class="lgi lt"><img src="assets/imagens/logos/logo-horizontal-claro.png" alt="Horizontal, fundo claro"></div><figcaption><b>Horizontal, fundo claro</b><span>Assinatura de e-mail, propostas</span><a class="btn sm" href="assets/imagens/logos/logo-horizontal-claro.png" download>Baixar</a></figcaption></figure><figure class="lg"><div class="lgi dk"><img src="assets/imagens/logos/logo-horizontal-escuro.png" alt="Horizontal, fundo escuro"></div><figcaption><b>Horizontal, fundo escuro</b><span>Slides e vídeos escuros</span><a class="btn sm" href="assets/imagens/logos/logo-horizontal-escuro.png" download>Baixar</a></figcaption></figure><figure class="lg"><div class="lgi ck"><img src="assets/imagens/logos/logo-mascote-fundo-transparente.png" alt="Mascote, fundo transparente"></div><figcaption><b>Mascote, fundo transparente</b><span>PNG para usar sobre qualquer cor clara</span><a class="btn sm" href="assets/imagens/logos/logo-mascote-fundo-transparente.png" download>Baixar</a></figcaption></figure><figure class="lg"><div class="lgi dk"><img src="assets/imagens/logos/logo-mascote-para-fundo-escuro.png" alt="Mascote para fundo escuro"></div><figcaption><b>Mascote para fundo escuro</b><span>PNG para fundos escuros</span><a class="btn sm" href="assets/imagens/logos/logo-mascote-para-fundo-escuro.png" download>Baixar</a></figcaption></figure><figure class="lg"><div class="lgi lt"><img src="assets/imagens/logos/logo-mascote.svg" alt="Mascote em SVG"></div><figcaption><b>Mascote em SVG</b><span>Vetor: aumenta sem perder qualidade</span><a class="btn sm" href="assets/imagens/logos/logo-mascote.svg" download>Baixar</a></figcaption></figure><figure class="lg"><div class="lgi dk"><img src="assets/imagens/logos/logo-mascote-escuro.svg" alt="Mascote em SVG, versão escura"></div><figcaption><b>Mascote em SVG, versão escura</b><span>Vetor para fundos escuros</span><a class="btn sm" href="assets/imagens/logos/logo-mascote-escuro.svg" download>Baixar</a></figcaption></figure><figure class="lg"><div class="lgi lt"><img src="assets/imagens/logos/icone-app.svg" alt="Ícone do app"></div><figcaption><b>Ícone do app</b><span>Quadrado, como aparece no computador</span><a class="btn sm" href="assets/imagens/logos/icone-app.svg" download>Baixar</a></figcaption></figure></div>
+</section>
+
+<section id="textos">
+<div class="k">Textos prontos</div>
+<h2>Frases e mensagens</h2>
+<p class="lede">Copie, troque o que está entre colchetes e envie. Escreva com as suas palavras sempre que puder.</p>
+<div class="sub" style="margin-top:0">Frases da marca</div>
+<div class="fr"><div class="cp"><p>Quem já precisa de você. O pacote é seu.</p><button class="btn sm" data-copy>Copiar</button></div><div class="cp"><p>100 empresas. Dono, contato e prova.</p><button class="btn sm" data-copy>Copiar</button></div><div class="cp"><p>Menos garimpo, mais conversa.</p><button class="btn sm" data-copy>Copiar</button></div><div class="cp"><p>Listas dizem quem. Nós mostramos por que vale abordar.</p><button class="btn sm" data-copy>Copiar</button></div><div class="cp"><p>Veja antes de comprar: 3 leads grátis.</p><button class="btn sm" data-copy>Copiar</button></div><div class="cp"><p>Um ponto de partida de verdade.</p><button class="btn sm" data-copy>Copiar</button></div></div>
+<div class="sub">Mensagens para o dia a dia</div>
+<div class="cp"><div><b>Convite para a call</b><p>Oi, [nome]! Aqui é [seu nome], da MineMyLead. Vi o seu pedido do teste grátis. Podemos conversar uns 30 minutos [dia] às [hora]? Eu quero entender como você vende hoje, te mostrar o produto e combinar o próximo passo. Se preferir outro horário, me diga.</p></div><button class="btn sm" data-copy>Copiar</button></div><div class="cp"><div><b>Depois da call, no mesmo dia</b><p>Oi, [nome]! Obrigado pela conversa de hoje. Pelo que você me contou, o seu cliente ideal é [cliente ideal]. Vou montar os 3 leads de teste para isso e te aviso quando estiverem prontos. Combinamos de falar de novo [dia]. Qualquer dúvida, é só chamar.</p></div><button class="btn sm" data-copy>Copiar</button></div><div class="cp"><div><b>Entrega do teste</b><p>Oi, [nome]! Os 3 leads de teste estão prontos. Cada empresa vem com o dono, o melhor contato direto e a prova tirada do site dela. Dá uma olhada e me diz o que achou. Se fizer sentido, o pacote de 100 empresas custa R$ 990, pagamento único.</p></div><button class="btn sm" data-copy>Copiar</button></div><div class="cp"><div><b>Se ele ainda está pensando</b><p>Oi, [nome]! Passando para saber se você viu os 3 leads de teste. Se algo não fez sentido para o seu cliente ideal, me conta: posso ajustar o perfil. Sem pressa, e sem compromisso.</p></div><button class="btn sm" data-copy>Copiar</button></div>
+<div class="note">Mande mensagem só para quem pediu o teste ou autorizou o contato. Se alguém pedir para parar, pare e avise o time: contact@minemylead.com.</div>
+</section>
+</main>
+
+<footer><div class="in"><b>MineMyLead</b> · Portal do vendedor · atualizado em 06/11/2026 · Material interno do time de vendas. Não compartilhe com clientes.</div></footer>
+<script>
+function flash(b,t){var o=b.textContent;b.textContent=t;b.classList.add('done');setTimeout(function(){b.textContent=o;b.classList.remove('done')},1600)}
+function copyText(t,b){
+  function ok(){flash(b,'Copiado!')}
+  if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(ok,function(){fb()})}else fb();
+  function fb(){var a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity=0;document.body.appendChild(a);a.select();try{document.execCommand('copy');ok()}catch(e){flash(b,'Copie manualmente')};a.remove()}
+}
+document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){var c=b.closest('.cp');var p=c.querySelector('p');copyText(p.textContent.trim(),b)})});
+document.querySelectorAll('[data-copy-id]').forEach(function(b){b.addEventListener('click',function(){copyText(document.getElementById(b.dataset.copyId).textContent,b)})});
+document.addEventListener('play',function(e){document.querySelectorAll('video').forEach(function(v){if(v!==e.target)v.pause()})},true);
+</script>
+</body>
+</html>
